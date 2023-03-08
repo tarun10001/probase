@@ -220,6 +220,7 @@ export const data = {
           content:
             "In May 2022, Project Baseline Health Study (BHS) participants and researchers from the California",
           date: "2022-07-26",
+          heading: "COVID-19",
           title:
             "Celebrating Together: Baseline Health Study\u2019s Four-Year Anniversary Event",
           card_img:
@@ -231,6 +232,7 @@ export const data = {
             "At the end of February 2022, we surveyed 2,700+ members of our COVID-19 Research Community. We wanted to know how confident our community members were in going about their everyday lives, as well as their plans for the near-term future. At the time of this survey, about a quarter (25.2%) of respondents reported not feeling very confident about attending large gatherings, such as concerts, events, weddings, etc. That said, people also reported that they are \u201csomewhat\u201d or \u201cvery\u201d confident about resuming work (44.3%), school (42.0%), or travel (55.6%), in the next 3 months. As we\u2019ve seen throughout the pandemic, regular testing will be important moving forward with more people resuming activities in communal spaces. In addition to finding COVID-19 testing sites near you, Verily\u2019s Health at Work program is a helpful solution that can inform workplace safety protocols as companies consider return to office plans. In the next three months, our respondents reported that they plan to continue practicing safe COVID-19 protocols, with the top responses being: Regularly sanitizing/washing my hands Wearing a mask in public places Practicing social distancing Along with their outlook on months ahead, we also asked what influenced respondents\u2019 behavior around COVID-19 protocols and plans in the last three months \u2013 the most common response was the new variant, followed by increases in new community infections and updates from government agencies. Omicron had many of our respondents adapting their behaviors and everyday activities. When asked what ways the COVID-19 pandemic has impacted their plans for the start of 2022, respondents were most likely to say that it changed their: Day-to-day activities (e.g. eating out, going to the gym, grocery shopping, etc.) Plans for hosting/participating in events (e.g. weddings, concerts, conferences, etc.) Travel plans We\u2019re thankful to our COVID-19 Research Community for taking the time to provide crucial insights as the pandemic continues to evolve.",
           date: "2022-04-29",
           title: "COVID-19 Hot Topics Survey",
+          heading: "COVID-19",
           card_img:
             "https://lh3.googleusercontent.com/LkwOO4FsHdObla8Ax2QqSghVI7eybbk0vqASeInjg-0UoOGjSLfPBfOmhqdDtP4CzchEPhpIrHuM7O4WPww44A4iw50g6xm6RlXYp4hoZbAyw2tqpXLm=w500-rw-v1",
         },
@@ -377,55 +379,8 @@ export const data = {
           title: "COVID-19 Hot Topics Survey",
           card_img:
             "https://lh3.googleusercontent.com/LkwOO4FsHdObla8Ax2QqSghVI7eybbk0vqASeInjg-0UoOGjSLfPBfOmhqdDtP4CzchEPhpIrHuM7O4WPww44A4iw50g6xm6RlXYp4hoZbAyw2tqpXLm=w500-rw-v1",
-        },
-        {
-          id: "6676118224240640",
-          content:
-            "Holidays are important times when families and friends gather to celebrate. As the holidays are fast approaching and COVID-19 is still active in our communities, we must make our loved ones' health and safety our number one priority. The past year has changed our approach to travel and brought about an increased consciousness of health and safety in communal spaces. We wanted to know how our COVID-19 Research Project Community members are navigating the pandemic during the holidays. \u00a0 As noted\u00a0by Dr. Robert Califf, the Verily Head of Clinical Strategy and Policy, it will be important to know quickly whether or not an illness is COVID-19, especially since the holidays also mark the peak of cold and flu season. Luckily, testing is more readily available in the U.S., and Project Baseline is part of this effort to help slow the spread of COVID-19. To find a testing center near you, click here. We put together a few tips adapted from recommendations released by the Centers for Disease Control and Prevention (CDC) to help you stay safe while hosting and gathering with loved ones as you travel for the holidays: For traveling: Getting yourself and eligible loved ones vaccinated can help protect others around you from contracting and spreading COVID-19 Make sure to follow all international and domestic travel restrictions, including wearing a mask on public transportation The CDC still recommends you avoid traveling unless you are fully vaccinated For gathering: Avoid attending/hosting events or gatherings if you are sick or show any symptoms If you have any symptoms of COVID-19 or have had close contact with someone infected with COVID-19, be sure to get tested as soon as possible Try to avoid crowded spaces with poor ventilation and opt for outdoor events when possible Wear masks that properly fit around your nose and mouth in public indoor settings",
-          date: "2021-12-09",
-          title: "Navigating COVID-19 safely during the 2021 holiday season",
-          card_img:
-            "https://lh3.googleusercontent.com/KK9UPRs5Rwk6PZ-cy8OzuisGJrC6VCahIq5zpkaFTdxOjPrii21nFnJ4lVHEDNeIci2-F9sTFKuU7jPRtIvKSQw_HpD4aO35LwI-wcigRnuu4iPuXt0=w500-rw-v1",
-        },
-        {
-          id: "6153732383047680",
-          content:
-            "Heading into the second year of the COVID-19 pandemic, the Baseline team at Verily.",
-          date: "2021-12-08",
-          title:
-            "2021 Roundup and 2022 Predictions in Clinical Research and Health",
-          card_img:
-            "https://lh3.googleusercontent.com/KK9UPRs5Rwk6PZ-cy8OzuisGJrC6VCahIq5zpkaFTdxOjPrii21nFnJ4lVHEDNeIci2-F9sTFKuU7jPRtIvKSQw_HpD4aO35LwI-wcigRnuu4iPuXt0=w500-rw-v1",
-        },
-        {
-          id: "5283436792905728",
-          content:
-            "Just as many children are heading back to in-person learning, the highly contagious Delta.",
-          date: "2021-09-28",
-          card_img:
-            "https://lh3.googleusercontent.com/kYJnXQZySZD5Q3ze_VW1QfQ241PW2uNUlM0GOOolElkx6d9sXgjLKBUEKBS_uTclnwthfIHlBY6IbD9NMovaqLJLYokY8VzSuzJjNaNChU8DuB3YWfE5=w500-rw-v1",
-          title:
-            "Understanding the impact of COVID-19 on children during the Delta wave",
-        },
-        {
-          id: "6137439885983744",
-          content:
-            "Many Americans are looking forward to traveling over the summer months. The CDC has created guidelines for safer travel, and recommends delaying travel until fully vaccinated. Take a look at some of the CDC\u2019s main recommendations to vacation safely this summer. International travel Fully vaccinated travelers (i.e., people two weeks out from their final dose) are less likely to get and spread COVID-19. However, the CDC notes even fully vaccinated travelers might be at increased risk for getting and possibly spreading some COVID-19 variants when traveling internationally. Unvaccinated people who must travel internationally have more travel requirements than fully vaccinated people. Before travel, it\u2019s also important to look up requirements related to travel, mask wearing, testing, or quarantine, in your destination, which may differ from U.S. requirements. Key tips for safer international travel: Learn more on the CDC's international travel page. Domestic travel Masks are required on planes, buses, trains, and other forms of public transportation traveling into, within, or out of the United States and while indoors at transportation hubs like airports and stations. Masks are not required in outdoor areas of a conveyance (like a ferry or top deck of a bus). Key tips for safer domestic travel: Learn more on the CDC\u2019s\u00a0domestic travel\u00a0page and use the\u00a0travel planner tool\u00a0to get local information on restrictions in specific areas of the U.S. When not to travel The CDC recommends not traveling if you or your travel companions: Are sick with symptoms of COVID-19 (even if\u00a0fully vaccinated\u00a0against COVID-19 or have recovered from COVID-19 in the past). Have suspected or diagnosed COVID-19 (even without symptoms) Have been around someone with suspected or diagnosed COVID-19 in the past 14 days (even without symptoms). Get more information on the\u00a0CDC website for travelers\u00a0and visit the\u00a0Baseline COVID-19 Testing Program website\u00a0to learn if testing is available in your area through Baseline. (Note: always check your destination\u2019s COVID-19 travel rules to confirm when and how to get tested to meet their requirements.)",
-          date: "2021-07-10",
-          card_img:
-            "https://lh3.googleusercontent.com/FJ6Jv0nyuSprlth75xbb29CrKRBpGsT4j7rIstZ7ZlcAjJ_O1VBdrytLQUujbfY7DZb1JsC8HcxC5xKASGPPrwa7am_V4LW6f8thc7cXHIylDgFUCQ=w500-rw-v1",
-          title: "Safer travel guidance from the CDC",
-        },
-        {
-          id: "5639193614876672",
-          content:
-            "The Delta variant is becoming a dominant COVID-19 strain worldwide, and is increasing rapidly",
-          date: "2021-07-09",
-          card_img:
-            "https://lh3.googleusercontent.com/XpB_ruHELgbOYCVnrdTtRvjcQWD1crX9az-BtOGoLc7DQ_SlZ6hHkt1sCkzMFySVwefVTkXIpLns8BgoNkwSr62_DWYzWj-xJzWXbxVwZn7KFwujf20=w500-rw-v1",
-          title:
-            "Deep dive on COVID-19 variants, vaccinations, and more with a medical expert",
-        },
+        }
+       
       ],
     },
     {

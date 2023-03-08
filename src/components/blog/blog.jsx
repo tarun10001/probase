@@ -8,14 +8,13 @@ export const Blog = () => {
   const [isShow, setIsShow] = useState(false);
   const [loadBlog, setLoadBlog] = useState(6);
 
-
   // const [filterBlog, setFilterBlog] = useState(new Array(data.blogData.length).fill(false));
-  const [filterBlog, setFilterBlog] = useState("");
+  const [originalData, setOriginalData] = useState(data);
+  const [filteredData, setFilteredData] = useState([]);
   const [showBtn, setShowBtn] = useState(false);
   const [active, setActive] = useState(false);
-  const [checked, setChecked] = useState([]);
+  const [checkedItems, setCheckedItems] = useState([]);
   const [list, setList] = useState([]);
-  console.log(filterBlog)
 
   const showData = () => {
     setLoadBlog(loadBlog + 2);
@@ -29,14 +28,21 @@ export const Blog = () => {
     }
   };
 
-  const checkbox = useRef();
-  const filterHandler = (e, health) => {
+  const checkbox = useRef([]);
+  // console.log(checkedItems);
+  const handleChange = (e) => {
     // console.log(health.target.value);
     // console.log(checkbox.target.value)
     // var updatedList = [...checked];
-    // if (checkbox.current.checked) {
-    //   console.log(event.target.value);
+    console.log(e);
+    if (e.target.checked) {
+      // checkbox.current = []
+      setCheckedItems([...checkedItems, e.target.value]);
+    }
+    // else {
+    //   setCheckedItems("");
     // }
+
     // if (e.target.checked) {
     //   setFilterBlog(prev => [...prev, health]);
     //   const newInitialList = data?.blogData.filter((list, index) => list.index !== health.heading);
@@ -44,8 +50,7 @@ export const Blog = () => {
     //   setList(newInitialList);
     // }
 
-
-    const updatedCheckState = filterBlog.map((item, index) => index === e ? !item : item);
+    // const updatedCheckState = filterBlog.map((item, index) => index === e ? !item : item);
 
     // setChecked(updatedList);
     // console.log(updatedList);
@@ -62,12 +67,55 @@ export const Blog = () => {
     // } else {
     //   setFilterBlog("");
     // }
-    setChecked(updatedCheckState);
   };
 
-  // const inputHandler = (value) => {
-  //   return value;
-  // };
+  var filtered = [];
+  const filterHandler = () => {
+    data.blogData.map((item) => {
+      item.blogFilter.map((health) => {
+        if (checkedItems.includes(health.heading)) {
+          // console.log(health.content)
+          filtered.push(item);
+          // setFilteredData([...filtered, health])
+          console.log(filtered);
+          // setOriginalData([health])
+          // console.log(originalData);
+        }
+      });
+    });
+  };
+
+  // useEffect(() => {
+  //   // filteredData.map((item) => {
+  //   //   return (
+  //   //     item.map((health) => {
+  //   //       return (
+  //   //         <>
+  //   //         <h1>{health.content}</h1>
+  //   //         </>
+  //   //       )
+  //   //     })
+  //   //   )
+
+  //   // })
+  //   // setFilterBlog(filteredData)
+
+  //   filteredData.map((item, index) => {
+  //     return (
+  //       <>
+  //       <h1>{item.heading}</h1>
+  //         {item.blogFilter.map((tile, index) => {
+  //           return (
+  //             <>
+  //             <h1>{tile.heading}</h1>
+  //             </>
+  //           );
+  //         })}
+  //       </>
+  //     );
+  //   })
+
+  // }, [data])
 
   return (
     <main>
@@ -114,10 +162,10 @@ export const Blog = () => {
                             <div className="blog-filter-group" key={index}>
                               <input
                                 type="checkbox"
-                                onClick={(e) => filterHandler(e, index)}
-                                value={health.index}
+                                onChange={handleChange}
+                                value={health.heading}
                                 ref={checkbox}
-                                active={active}
+                                // active={active}
                                 // defaultChecked={false}
                               />
                               {/* <span className="checkbox-icon" onClick={(health) => checkList(health)}> */}
@@ -147,9 +195,51 @@ export const Blog = () => {
         </div>
 
         <div className="blog-tile">
-          {data?.blogData.slice(0, loadBlog).map((item, index) => {
+          {/* {data?.blogData.map((item, index) => {
             return (
               <>
+                {item.blogFilter.map((tile, index) => {
+                  return (
+                    <>
+                      <article className="blog-tile__block">
+                        <div className="blog-tile__block__img">
+                          <img src={tile.card_img} alt="" />
+                        </div>
+                        <div className="blog-tile__block__content">
+                          <div className="blog-tile__block__content__title">
+                            <h3>{tile.title}</h3>
+
+                            {tile.content.length > 90 ? (
+                              <p>{tile.content.slice(0, 160) + "..."}</p>
+                            ) : (
+                              <p>{tile.content}</p>
+                            )}
+                          </div>
+
+                          <div className="blog-tile__block__content__info">
+                            <p>{tile.date}</p>
+                            <button>
+                              <p>
+                                <span>Read more</span>
+                                <span>
+                                  <AiOutlinePlus />
+                                </span>
+                              </p>
+                            </button>
+                          </div>
+                        </div>
+                      </article>
+                    </>
+                  );
+                })}
+              </>
+            );
+          })} */}
+
+          {filtered.map((item, index) => {
+            return (
+              <>
+                {/* <h1>{item.heading}</h1> */}
                 {item.blogFilter.map((tile, index) => {
                   return (
                     <>
